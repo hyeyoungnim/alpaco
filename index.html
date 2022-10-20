@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <!-- 왼쪽 상단에 맥북 팝업창 느낌으로 빨강, 노랑, 초록 버튼을 구현 -->
+      <div class="display-pane">
+        <div class="calculator-dot">
+          <button class="dot-button red"></button>
+          <button class="dot-button yellow"></button>
+          <button class="dot-button green"></button>
+        </div>
+
+        <!-- 숫자 입력창 구현 -->
+        <div id="ivalue" class="calculator-input value">0</div>
+      </div>
+
+      <!-- 계산기 버튼 구현-->
+      <div id="ibutton" class="calculator-button">
+        <button data-etcvalue="AC">AC</button>
+        <button data-etcvalue="+/-">+/-</button>
+        <button data-etcvalue="%">%</button>
+        <button data-opervalue="/" class="yellow">/</button>
+
+        <button data-numvalue="7">7</button>
+        <button data-numvalue="8">8</button>
+        <button data-numvalue="9">9</button>
+        <button data-opervalue="*" class="yellow">*</button>
+
+        <button data-numvalue="4">4</button>
+        <button data-numvalue="5">5</button>
+        <button data-numvalue="6">6</button>
+        <button data-opervalue="-" class="yellow">-</button>
+
+        <button data-numvalue="1">1</button>
+        <button data-numvalue="2">2</button>
+        <button data-numvalue="3">3</button>
+        <button data-opervalue="+" class="yellow">+</button>
+
+        <button data-numvalue="0" class="big">0</button>
+        <button data-numvalue=".">.</button>
+        <button data-opervalue="=" class="yellow">=</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

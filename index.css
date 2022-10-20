@@ -1,0 +1,177 @@
+/* 기본 스타일 설정 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+button {
+  padding: 0px;
+}
+
+/* 배경 설정하기 */
+.calculator {
+  background-color: rgb(216, 190, 190);
+  width: 240px;
+  overflow: auto;
+  box-sizing: border-box;
+  margin: 0px;
+  border: 1px solid gray;
+}
+
+.display-pane {
+  position: relative;
+}
+
+/* 왼쪽 상단에 맥북 팝업창 느낌으로 빨강, 노랑, 초록 버튼을 구현 */
+.calculator-dot {
+  left: 5px;
+  background-color: #304c6d;
+  float: left;
+  margin: 0px;
+  position: absolute;
+}
+.dot-button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  border: none;
+}
+
+.red {
+  background-color: #ff554e;
+}
+.yellow {
+  background-color: #ffbd2e;
+}
+.green {
+  background-color: #27c93f;
+}
+
+/* 숫자 입력창 구현하기*/
+.calculator-input.value {
+  width: 228px;
+  height: 50px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #304c6d;
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+/* 계산기 버튼 구현하기 */
+.calculator-button > * {
+  width: 59.5px;
+  height: 40px;
+  margin: 0px;
+  background-color: #e0e0e0;
+  border: none;
+  outline: 1px solid gray;
+  float: left;
+  font-size: 20px;
+  text-align: center;
+}
+.calculator-button > *:nth-child(n):hover {
+  background-color: slategrey;
+}
+
+.calculator-button > .big {
+  padding-left: 25px;
+  text-align: left;
+  width: 119px;
+}
+
+.calculator-button > .yellow {
+  background-color: #f79231;
+  color: white;
+}
